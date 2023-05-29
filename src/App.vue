@@ -140,13 +140,13 @@
       </div>
     </header>
     <MySlider />
-    <Modal />
+    <!-- <Modal /> -->
   </v-app>
 </template>
 
 <script setup>
 import MySlider from './components/MySlider.vue';
-import Modal from './components/Modal.vue'
+// import Modal from './components/Modal.vue'
 import { ref } from 'vue';
 
 const showModal = ref(false)
