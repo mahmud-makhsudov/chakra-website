@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+body {
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1130px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.link {
+  position: relative;
+  transition: all .3s;
+  color: #fff !important;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+    transition: all .3s;
+  }
+
+  &.active,
+  &:hover {
+    color: #fff !important;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
